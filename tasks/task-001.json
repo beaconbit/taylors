@@ -1,0 +1,90 @@
+{
+  "id": "task-001",
+  "title": "Initialize project tracking system",
+  "description": "Set up the foundational task tracking infrastructure including OpenCode configuration, task format specification, and directory structure. This establishes the system for managing all future project tasks.",
+  "status": "done",
+  "priority": "high",
+  "created": "2025-02-10T10:00:00Z",
+  "updated": "2025-02-10T14:45:00Z",
+  "due": "2025-02-10T17:00:00Z",
+  "assignee": "alice@example.com",
+  "involved_people": ["system", "alice@example.com", "bob@example.com"],
+  "updates": [
+    {
+      "date": "2025-02-10T10:15:00Z",
+      "description": "Initial task creation and assignment",
+      "creator": "system",
+      "new_owner": "alice@example.com"
+    },
+    {
+      "date": "2025-02-10T11:30:00Z",
+      "description": "Completed configuration setup and documentation",
+      "creator": "alice@example.com",
+      "status_change": {
+        "from": "in_progress",
+        "to": "review"
+      },
+      "new_owner": "bob@example.com"
+    },
+    {
+      "date": "2025-02-10T14:45:00Z",
+      "description": "Reviewed and approved setup. Added people tracking and update system.",
+      "creator": "bob@example.com",
+      "status_change": {
+        "from": "review",
+        "to": "done"
+      }
+    }
+  ],
+  "tags": ["setup", "configuration", "documentation"],
+  "dependencies": [],
+  "subtasks": [
+    {
+      "title": "Create OpenCode configuration directory",
+      "completed": true
+    },
+    {
+      "title": "Define task JSON schema and required fields",
+      "completed": true
+    },
+    {
+      "title": "Create task template for future tasks",
+      "completed": true
+    },
+    {
+      "title": "Write project instructions for OpenCode",
+      "completed": true
+    },
+    {
+      "title": "Create sample task as example",
+      "completed": true
+    },
+    {
+      "title": "Add people tracking and update system",
+      "completed": true
+    }
+  ],
+  "notes": [
+    "Using JSON format for maximum tool compatibility",
+    "ISO8601 timestamps ensure consistent date handling",
+    "Task IDs follow sequential numbering pattern",
+    "Update system tracks responsibility transfers and status changes"
+  ],
+  "links": [
+    {
+      "type": "config",
+      "url": ".opencode/config.json",
+      "description": "Primary configuration file"
+    },
+    {
+      "type": "instructions",
+      "url": ".opencode/instructions.md",
+      "description": "Detailed project instructions"
+    },
+    {
+      "type": "template",
+      "url": ".opencode/update_template.json",
+      "description": "Update object template"
+    }
+  ]
+}

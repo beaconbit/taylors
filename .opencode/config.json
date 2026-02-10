@@ -1,0 +1,35 @@
+{
+  "project": {
+    "name": "Taylors Project",
+    "description": "Project management and task tracking system",
+    "task_format": {
+      "template": "json",
+      "required_fields": ["id", "title", "status", "priority", "created", "description"],
+      "optional_fields": ["involved_people", "updates", "assignee", "blockers"],
+      "default_status": "todo",
+      "default_priority": "medium",
+      "auto_generate_id": true,
+      "id_prefix": "task",
+      "auto_timestamp": true,
+      "date_format": "ISO8601"
+    },
+    "update_format": {
+      "required_fields": ["date", "description", "creator"],
+      "optional_fields": ["new_owner", "status_change", "priority_change"],
+      "template": "update_template.json"
+    },
+    "directories": {
+      "tasks": "./tasks",
+      "docs": "./docs",
+      "config": "./.opencode"
+    },
+    "status_values": ["todo", "repeating", "in_progress", "review", "done", "blocked"],
+    "priority_values": ["low", "medium", "high"]
+  },
+  "instructions": {
+    "task_creation": "Create tasks in JSON format with all required fields. Use ISO8601 timestamps (YYYY-MM-DDTHH:MM:SSZ).",
+    "task_update": "When updating tasks, don't modify the task directly instead add an update to the task, all updates should follow update_template.json",
+    "update_process": "Each update should include date, description, creator, and optionally new_owner when responsibility transfers.",
+    "id_format": "Use auto-generated IDs with prefix 'task-' followed by 3-digit number."
+  }
+}
