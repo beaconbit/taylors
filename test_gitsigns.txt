@@ -1,1 +1,16 @@
 Test file for gitsigns
+
+- `j/k` - Move up/down
+- `h/l` - Switch panels
+- `Enter` - Select/expand
+- `Space` - Toggle selection
+- `Tab` - Switch between staged/unstaged
+
+**Common operations:**
+- `s` - Stage/unstage
+- `c` - Commit
+- `P` - Push
+- `p` - Pull
+- `d` - View diff
+- `R` - Refresh
+- `?` - Show keybindings help
