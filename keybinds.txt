@@ -1,4 +1,4 @@
-Test file for gitsigns
+Lazy git
 
 - `j/k` - Move up/down
 - `h/l` - Switch panels
@@ -6,7 +6,6 @@ Test file for gitsigns
 - `Space` - Toggle selection
 - `Tab` - Switch between staged/unstaged
 
-**Common operations:**
 - `s` - Stage/unstage
 - `c` - Commit
 - `P` - Push
@@ -14,3 +13,23 @@ Test file for gitsigns
 - `d` - View diff
 - `R` - Refresh
 - `?` - Show keybindings help
+
+
+Neo Tree 
+
+- `<leader>o` - Focus file explorer (brings cursor to Neotree)
+
+- `j/k` - Move up/down
+- `l` or `Enter` - Open file/expand directory
+- `h` - Collapse directory/go up
+- `a` - Add file/directory
+- `d` - Delete file/directory
+- `r` - Rename
+- `c` - Copy
+- `m` - Move
+- `s` - Open in split
+- `v` - Open in vertical split
+- `t` - Open in new tab
+- `q` - Close Neotree
+- `R` - Refresh
+- `?` - Show help
