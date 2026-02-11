@@ -1,0 +1,14 @@
+{
+  "id": "task_043",
+  "title": "Ironer 4 grease drive chains infeed folder",
+  "description": "Ironer 4 grease drive chains on infeed folder",
+  "status": "repeating",
+  "priority": "medium",
+  "created": "2026-02-11T09:25:16Z",
+  "updated": "2026-02-11T09:25:16Z",
+  "assignee": "joseph",
+  "involved_people": [],
+  "updates": [],
+  "frequency": "monthly",
+  "next_occurrence": "2026-03-11T08:00:00Z"
+}

@@ -5,10 +5,16 @@
   "status": "todo",
   "priority": "medium",
   "created": "2026-02-11T01:52:57Z",
-  "updated": "2026-02-11T01:52:57Z",
+  "updated": "2026-02-11T02:55:11Z",
   "assignee": "",
   "involved_people": [],
-  "updates": [],
+  "updates": [
+    {
+      "date": "2026-02-11T02:55:11Z",
+      "description": "Calibrated the moisture meter today",
+      "creator": "system"
+    }
+  ],
   "frequency": "",
   "next_occurrence": ""
 }

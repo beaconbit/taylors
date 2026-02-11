@@ -1,0 +1,14 @@
+{
+  "id": "task_045",
+  "title": "Gear box oil level CBW 1 2 3",
+  "description": "Gear box oil level CBW 1,2,3",
+  "status": "repeating",
+  "priority": "medium",
+  "created": "2026-02-11T09:25:16Z",
+  "updated": "2026-02-11T09:25:16Z",
+  "assignee": "joseph",
+  "involved_people": [],
+  "updates": [],
+  "frequency": "weekly",
+  "next_occurrence": "2026-02-16T08:00:00Z"
+}

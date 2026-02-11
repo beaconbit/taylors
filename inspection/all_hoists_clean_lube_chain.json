@@ -1,0 +1,14 @@
+{
+  "id": "task_047",
+  "title": "All hoists clean lube chain",
+  "description": "all hoists clean and lube chain",
+  "status": "repeating",
+  "priority": "medium",
+  "created": "2026-02-11T09:25:16Z",
+  "updated": "2026-02-11T09:25:16Z",
+  "assignee": "joseph",
+  "involved_people": [],
+  "updates": [],
+  "frequency": "monthly",
+  "next_occurrence": "2026-03-11T08:00:00Z"
+}

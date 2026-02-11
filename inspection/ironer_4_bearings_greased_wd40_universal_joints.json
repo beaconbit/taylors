@@ -1,0 +1,14 @@
+{
+  "id": "task_042",
+  "title": "Ironer 4 bearings greased WD40 universal joints",
+  "description": "Ironer 4 bearings greased & WD40 universal joints",
+  "status": "repeating",
+  "priority": "medium",
+  "created": "2026-02-11T09:25:16Z",
+  "updated": "2026-02-11T09:25:16Z",
+  "assignee": "joseph",
+  "involved_people": [],
+  "updates": [],
+  "frequency": "monthly",
+  "next_occurrence": "2026-03-11T08:00:00Z"
+}

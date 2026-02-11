@@ -1,0 +1,14 @@
+{
+  "id": "task_048",
+  "title": "All hoists check motor",
+  "description": "all hoists check motor",
+  "status": "repeating",
+  "priority": "medium",
+  "created": "2026-02-11T09:25:16Z",
+  "updated": "2026-02-11T09:25:16Z",
+  "assignee": "joseph",
+  "involved_people": [],
+  "updates": [],
+  "frequency": "monthly",
+  "next_occurrence": "2026-03-11T08:00:00Z"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "task_044",
+  "title": "Ironer tapes",
+  "description": "Ironer Tapes",
+  "status": "repeating",
+  "priority": "medium",
+  "created": "2026-02-11T09:25:16Z",
+  "updated": "2026-02-11T09:25:16Z",
+  "assignee": "joseph",
+  "involved_people": [],
+  "updates": [],
+  "frequency": "daily",
+  "next_occurrence": "2026-02-12T08:00:00Z"
+}

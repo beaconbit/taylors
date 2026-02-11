@@ -1,0 +1,14 @@
+{
+  "id": "task_050",
+  "title": "Belt tracking bearing check all conveyors",
+  "description": "belt tracking and bearing check on all conveyors",
+  "status": "repeating",
+  "priority": "medium",
+  "created": "2026-02-11T09:25:16Z",
+  "updated": "2026-02-11T09:25:16Z",
+  "assignee": "joseph",
+  "involved_people": [],
+  "updates": [],
+  "frequency": "weekly",
+  "next_occurrence": "2026-02-16T08:00:00Z"
+}
