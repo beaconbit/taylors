@@ -1,0 +1,14 @@
+{
+  "id": "task_027",
+  "title": "Bag count tracking",
+  "description": "bag count tracking",
+  "status": "repeating",
+  "priority": "medium",
+  "created": "2026-02-11T02:23:01Z",
+  "updated": "2026-02-11T02:23:01Z",
+  "assignee": "",
+  "involved_people": [],
+  "updates": [],
+  "frequency": "weekly",
+  "next_occurrence": "2026-02-16T08:00:00Z"
+}

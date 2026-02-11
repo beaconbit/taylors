@@ -5,9 +5,12 @@ This project uses a text-based task tracking system that can be imported into va
 
 ## Task Format Specification
 
-### File Location
+### File Location and Naming
 - All tasks go directly in the topic directory (e.g., `factory projects/`, `info management/`, `recovery/`)
-- File naming: Use title converted to lowercase with underscores (e.g., `clean_bag_extend_storage_line.json`)
+- **IMPORTANT: Task files MUST be named after the task title, NOT the task ID**
+- File naming convention: Convert task title to lowercase, replace spaces with underscores, and add `.json` extension
+- Example: Task title "Clean bag extend storage line" becomes `clean_bag_extend_storage_line.json`
+- Never use task ID in filename (e.g., do NOT use `task-001.json`)
 
 ### Required Fields
 Every task must include:
@@ -46,7 +49,11 @@ Example: `2025-02-10T14:30:00Z`
 1. Generate unique ID (next sequential number)
 2. Fill all required fields
 3. Add `assignee` and `involved_people` if known
-4. Save as JSON file in topic directory with title-based filename
+4. **CRITICAL: Save file with title-based filename, NOT task ID**
+   - Convert title to lowercase
+   - Replace spaces with underscores
+   - Add `.json` extension
+   - Example: `rail_system_map_grid.json`
 
 ## Update Process
 When updating a task:

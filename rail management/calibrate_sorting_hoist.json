@@ -1,0 +1,14 @@
+{
+  "id": "task_026",
+  "title": "Calibrate sorting hoist",
+  "description": "calibrate sorting hoist",
+  "status": "repeating",
+  "priority": "high",
+  "created": "2026-02-11T02:23:01Z",
+  "updated": "2026-02-11T02:23:01Z",
+  "assignee": "",
+  "involved_people": [],
+  "updates": [],
+  "frequency": "weekly",
+  "next_occurrence": "2026-02-16T08:00:00Z"
+}

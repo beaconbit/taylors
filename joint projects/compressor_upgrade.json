@@ -1,0 +1,14 @@
+{
+  "id": "task_024",
+  "title": "Compressor upgrade",
+  "description": "upgrade the compressor and air dryer",
+  "status": "todo",
+  "priority": "low",
+  "created": "2026-02-11T02:17:16Z",
+  "updated": "2026-02-11T02:17:16Z",
+  "assignee": "",
+  "involved_people": ["marty", "rod"],
+  "updates": [],
+  "frequency": "",
+  "next_occurrence": ""
+}

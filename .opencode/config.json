@@ -29,6 +29,7 @@
     "task_creation": "Create tasks in JSON format with all required fields. Use ISO8601 timestamps (YYYY-MM-DDTHH:MM:SSZ).",
     "task_update": "When updating tasks, don't modify the task directly instead add an update to the task, all updates should follow update_template.json",
     "update_process": "Each update should include date, description, creator, and optionally new_owner when responsibility transfers.",
-    "id_format": "Use auto-generated IDs with prefix 'task-' followed by 3-digit number."
+    "id_format": "Use auto-generated IDs with prefix 'task-' followed by 3-digit number.",
+    "filename_convention": "Task files MUST be named after the task title (converted to lowercase with underscores), NOT the task ID. Example: 'rail_system_map_grid.json'"
   }
 }
