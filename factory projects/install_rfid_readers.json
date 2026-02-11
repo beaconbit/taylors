@@ -1,0 +1,14 @@
+{
+  "id": "task_007",
+  "title": "Install RFID readers",
+  "description": "install rfid readers",
+  "status": "todo",
+  "priority": "low",
+  "created": "2026-02-11T01:33:13Z",
+  "updated": "2026-02-11T01:33:13Z",
+  "assignee": "peter",
+  "involved_people": [],
+  "updates": [],
+  "frequency": "",
+  "next_occurrence": ""
+}

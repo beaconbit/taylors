@@ -1,0 +1,14 @@
+{
+  "id": "task_005",
+  "title": "Write and test RFID server application",
+  "description": "write and test rfid server application",
+  "status": "todo",
+  "priority": "low",
+  "created": "2026-02-11T01:33:13Z",
+  "updated": "2026-02-11T01:33:13Z",
+  "assignee": "peter",
+  "involved_people": [],
+  "updates": [],
+  "frequency": "",
+  "next_occurrence": ""
+}

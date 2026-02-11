@@ -19,7 +19,6 @@
       "template": "update_template.json"
     },
     "directories": {
-      "tasks": "./tasks",
       "docs": "./docs",
       "config": "./.opencode"
     },

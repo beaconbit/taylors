@@ -1,0 +1,14 @@
+{
+  "id": "task-013",
+  "title": "HMI USB backup images",
+  "description": "hmi usb images, create backup system images on live usbs for each type of screen hmi and pc, label the usbs, store copies remotely",
+  "status": "todo",
+  "priority": "high",
+  "created": "2026-02-11T01:25:11Z",
+  "updated": "2026-02-11T01:25:11Z",
+  "assignee": "peter",
+  "involved_people": [],
+  "updates": [],
+  "frequency": "",
+  "next_occurrence": ""
+}

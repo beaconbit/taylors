@@ -6,8 +6,8 @@ This project uses a text-based task tracking system that can be imported into va
 ## Task Format Specification
 
 ### File Location
-- All tasks go in the `tasks/` directory
-- File naming: `{task-id}.json` (e.g., `task-001.json`)
+- All tasks go directly in the topic directory (e.g., `factory projects/`, `info management/`, `recovery/`)
+- File naming: Use title converted to lowercase with underscores (e.g., `clean_bag_extend_storage_line.json`)
 
 ### Required Fields
 Every task must include:
@@ -46,7 +46,7 @@ Example: `2025-02-10T14:30:00Z`
 1. Generate unique ID (next sequential number)
 2. Fill all required fields
 3. Add `assignee` and `involved_people` if known
-7. Save as JSON file in `tasks/` directory
+4. Save as JSON file in topic directory with title-based filename
 
 ## Update Process
 When updating a task:
@@ -68,9 +68,45 @@ When updating a task:
 }
 ```
 
-## Import Compatibility
+ ## Import Compatibility
 This format is designed to be easily converted to:
 - CSV for spreadsheet import
 - JSON for API-based tools
 - YAML for configuration-based systems
 - Markdown for documentation
+
+## Automated Reports
+
+### Generate Synopsis
+When instructed to "generate synopsis":
+1. Read all task files from topic directories
+2. Create `synopsis.md` at project root with:
+   - Current date
+   - High priority tasks only
+3. For each high priority task, include:
+   - Task title and ID and path (directory path)
+   - description
+   - Last 1 update (most recent)
+4. Use template from `example_synopsis.md` as guide
+
+### Generate Recurring Tasks Report
+When instructed to "generate recurring":
+1. Find all tasks with status "repeating"
+2. Filter for tasks with `next_occurrence` date within current week
+3. Create `recurring.md` at project root with:
+   - Week range (Monday to Sunday)
+   - Each recurring task with:
+     - Title and ID
+     - Frequency and next occurrence
+     - Directory location
+     - Placeholders for outcome, resulting tasks, and next occurrence
+4. Use template from `example_recurring.md` as guide
+
+### Process Recurring Updates
+When `recurring.md` has been populated with outcomes:
+1. Read `recurring.md` file
+2. For each completed recurring task:
+   - Add update to original task file with outcome
+   - Update `next_occurrence` field based on specified time
+   - Create new tasks from "resulting_tasks" section
+   - Assign new tasks to appropriate directories

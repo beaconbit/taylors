@@ -1,0 +1,14 @@
+{
+  "id": "task_016",
+  "title": "Automatic wait time reports",
+  "description": "implement automatic generation and emailing of wait time reports",
+  "status": "todo",
+  "priority": "high",
+  "created": "2026-02-11T01:52:57Z",
+  "updated": "2026-02-11T01:52:57Z",
+  "assignee": "",
+  "involved_people": [],
+  "updates": [],
+  "frequency": "",
+  "next_occurrence": ""
+}

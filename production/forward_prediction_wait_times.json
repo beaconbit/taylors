@@ -1,0 +1,14 @@
+{
+  "id": "task_017",
+  "title": "Forward prediction wait times",
+  "description": "implement forward prediction of possible wait times based on too many dry products or too many wet products",
+  "status": "todo",
+  "priority": "low",
+  "created": "2026-02-11T01:52:57Z",
+  "updated": "2026-02-11T01:52:57Z",
+  "assignee": "",
+  "involved_people": [],
+  "updates": [],
+  "frequency": "",
+  "next_occurrence": ""
+}

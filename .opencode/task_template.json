@@ -5,7 +5,10 @@
   "status": "todo",
   "priority": "medium",
   "created": "{{timestamp}}",
+  "updated": "{{timestamp}}",
   "assignee": "",
   "involved_people": [],
-  "updates": []
+  "updates": [],
+  "frequency": "",
+  "next_occurrence": ""
 }

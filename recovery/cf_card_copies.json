@@ -1,0 +1,14 @@
+{
+  "id": "task-014",
+  "title": "CF card copies",
+  "description": "cf cards, create copies of each cf card in the factory, label them, store them in a known location",
+  "status": "todo",
+  "priority": "high",
+  "created": "2026-02-11T01:25:11Z",
+  "updated": "2026-02-11T01:25:11Z",
+  "assignee": "peter",
+  "involved_people": [],
+  "updates": [],
+  "frequency": "",
+  "next_occurrence": ""
+}

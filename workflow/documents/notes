@@ -1,0 +1,13 @@
+create a synopsis.md file at the root of the Taylors project
+that can be generated with a standard instruction "generate synopsis" defined in .opencode, the synopsis.md should contain 
+a bullet point shortlist of most recent updates to highest priority tasks
+
+need another recurring.md file at the root that can be generated with a standard
+instruction "generate recurring" that pulls all recurring tasks with a todo date this week 
+and leaves space to input the outcome, resulting tasks (and which directory they fall under),
+and the time until the next occurance. 
+
+once recurring.md is populated there should be an instruction file for automatically taking the
+recurring task updates and creating an update object in each corresponding taskfile, creating new
+tasks from the "resulting_tasks" and updating the next_occurance field for each recurring task
+based on the specified time until next occurance

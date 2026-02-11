@@ -1,0 +1,14 @@
+{
+  "id": "task_009",
+  "title": "Create digital manuals repository",
+  "description": "create a repo for digital manuals per machine, machine info, relevant workhistory",
+  "status": "todo",
+  "priority": "high",
+  "created": "2026-02-11T01:33:13Z",
+  "updated": "2026-02-11T01:33:13Z",
+  "assignee": "peter",
+  "involved_people": [],
+  "updates": [],
+  "frequency": "",
+  "next_occurrence": ""
+}

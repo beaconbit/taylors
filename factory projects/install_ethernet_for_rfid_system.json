@@ -1,0 +1,14 @@
+{
+  "id": "task_006",
+  "title": "Install Ethernet for RFID system",
+  "description": "install ethernet for rfid",
+  "status": "todo",
+  "priority": "low",
+  "created": "2026-02-11T01:33:13Z",
+  "updated": "2026-02-11T01:33:13Z",
+  "assignee": "peter",
+  "involved_people": [],
+  "updates": [],
+  "frequency": "",
+  "next_occurrence": ""
+}

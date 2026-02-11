@@ -1,0 +1,14 @@
+{
+  "id": "task-015",
+  "title": "Supertrack server image backup",
+  "description": "supertrack server image, create a copy of the supertrack server and other control PC's on live usb's label them and store them in a known location, confirm restore is possible in test hardware",
+  "status": "todo",
+  "priority": "high",
+  "created": "2026-02-11T01:25:11Z",
+  "updated": "2026-02-11T01:25:11Z",
+  "assignee": "peter",
+  "involved_people": [],
+  "updates": [],
+  "frequency": "",
+  "next_occurrence": ""
+}

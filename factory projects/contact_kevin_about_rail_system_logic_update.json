@@ -1,0 +1,14 @@
+{
+  "id": "task_004",
+  "title": "Contact Kevin about rail system logic update",
+  "description": "contact kevin regarding updating rail system logic to always close bags and reverse conveyor when it is dropping a load",
+  "status": "todo",
+  "priority": "low",
+  "created": "2026-02-11T01:33:13Z",
+  "updated": "2026-02-11T01:33:13Z",
+  "assignee": "peter",
+  "involved_people": [],
+  "updates": [],
+  "frequency": "",
+  "next_occurrence": ""
+}
