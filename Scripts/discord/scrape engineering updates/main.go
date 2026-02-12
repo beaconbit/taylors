@@ -147,11 +147,8 @@ func fetchMessages(s *discordgo.Session, channelID string, since time.Time) ([]*
 
 		// Filter messages that are newer than our threshold
 		for _, msg := range messages {
-			msgTime, err := msg.Timestamp.Parse()
-			if err != nil {
-				log.Printf("Warning: Could not parse timestamp for message %s: %v", msg.ID, err)
-				continue
-			}
+			// msg.Timestamp is already a time.Time, no need to parse
+			msgTime := msg.Timestamp
 
 			// If message is older than our threshold, stop fetching
 			if msgTime.Before(since) {
@@ -194,12 +191,8 @@ func saveMessages(db *sql.DB, discordMessages []*discordgo.Message) int {
 	txStmt := tx.Stmt(stmt)
 
 	for _, msg := range discordMessages {
-		// Parse timestamp
-		timestamp, err := msg.Timestamp.Parse()
-		if err != nil {
-			log.Printf("Warning: Could not parse timestamp for message %s: %v", msg.ID, err)
-			continue
-		}
+		// msg.Timestamp is already a time.Time, no need to parse
+		timestamp := msg.Timestamp
 
 		// Get author name
 		authorName := msg.Author.Username

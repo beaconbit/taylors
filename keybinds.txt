@@ -1,4 +1,4 @@
-Lazy git
+Lazy git <leader>lg to open C-c to close
 
 - `j/k` - Move up/down
 - `h/l` - Switch panels
@@ -15,7 +15,7 @@ Lazy git
 - `?` - Show keybindings help
 
 
-Neo Tree 
+Neo Tree <leader>e to open/close C-l and C-h to move focus between tree and buffer
 
 - `<leader>o` - Focus file explorer (brings cursor to Neotree)
 
