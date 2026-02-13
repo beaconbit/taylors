@@ -7,6 +7,7 @@ import (
 	"os"
 	"strings"
 	"time"
+	"discord-scraper/utils"
 
 	"github.com/bwmarrin/discordgo"
 	"github.com/joho/godotenv"
@@ -82,7 +83,7 @@ func main() {
 	}
 
 	// Calculate time threshold (1 hour ago)
-	oneHourAgo := time.Now().Add(-1 * time.Hour)
+	oneHourAgo := time.Now().Add(-5 * time.Minute)
 	log.Printf("Fetching messages since: %v", oneHourAgo.Format(time.RFC3339))
 
 	// Fetch messages
@@ -93,6 +94,19 @@ func main() {
 
 	// Save messages to database
 	savedCount := saveMessages(db, messages)
+
+	// pass the messages to be processed by opencode
+	for _, msg := range messages {
+		authorName := msg.Author.Username
+		content := msg.Content
+		if msg.Member != nil && msg.Member.Nick != "" {
+			authorName = msg.Member.Nick
+		}
+		err := utils.QueryOpenCode(content, authorName)
+		if err != nil {
+			log.Println(err)
+		}
+	}
 	log.Printf("Successfully saved %d messages to database", savedCount)
 }
 

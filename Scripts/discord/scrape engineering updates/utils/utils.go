@@ -1,4 +1,4 @@
-package main
+package utils
 
 import (
 	"bytes"
@@ -9,13 +9,13 @@ import (
 	"path/filepath"
 )
 
-// ExampleQueryOpenCode calls the local OpenCode API with the given prompt
-// It uses ~/Taylors/.opencode as the context path and includes instructions.md and config.json
-func main() {
-	log.Println("hello")
+func Test() {
+	log.Println("test works")
 }
 
-func QueryOpenCode(prompt string, author string) (error) {
+// ExampleQueryOpenCode calls the local OpenCode API with the given prompt
+// It uses ~/Taylors/.opencode as the context path and includes instructions.md and config.json
+func QueryOpenCode(prompt string, author string) error {
 	// Get the context directory
 	contextDir := "/home/ubuntu/Taylors/.opencode"
 
@@ -55,7 +55,7 @@ Please provide a helpful response based on the task management context.`,
 		promptWithInstructions)
 
 	// create command
-	cmd := exec.Command("opencode", "run", fullPrompt)
+	cmd := exec.Command("/home/ubuntu/.opencode/bin/opencode", "run", fullPrompt)
 
 	// Set working directory to the context directory so OpenCode can find the .opencode files
 	cmd.Dir = "/home/ubuntu/Taylors"
@@ -80,10 +80,13 @@ Please provide a helpful response based on the task management context.`,
 func WrapPromptWithInstructions(discordMessage string, author string) (string, error) {
 	prompt := fmt.Sprintf(`Analyze this Discord message from %s 
 
+
 and determine if it should become a new task or an update to an existing task,
 if it should be a new task then create a new task as specified, if it is an update to 
 an existing task then add an update object to the existing task. If it is an update to
 an existing task that has a status "repeating" then update the "updated" and "next_occurance" fields.
+
+if the message doesn't sound like it can be turned into a task, or isn't related to mechanical engineering in a laundry PLEASE IGNORE
 
 
 Message: "%s"
